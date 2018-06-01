@@ -1,0 +1,25 @@
+*** IF YOU INTEND TO USE THIS CODE IN A PUBLIC ENVIRONMENT, ***
+*** CHANGE THE PASSWORD IN config/db.inc.php and setup.sql  *** 
+
+This project is a simple exhibition of an JSON API->MySQL ETL, 
+wrapped into a humble PHP MVC.
+
+There are some data validation steps taken in each layer of 
+this example, but they are by no means complete. Further, no 
+test harness is presented for the ETL contained in this project, 
+and such a device should surely be formally developed and present 
+to accompany production code. Said simply: I've limited time.
+
+The project first makes an API call to the National Hockey League 
+(NHL, https://statsapi.web.nhl.com/api/v1/) to fetch a list of teams.
+
+Users then select their favorite team and submit an HTML form.
+
+Content of this submission is used to form a second API call to the
+NHL which retrieves the seleted team's current roster of players, along
+their boolean status as team captain, and their birthday.
+
+Users are then informed of their seleted team's captain (or captains, or
+absence thereof, as are all in regular practice from one club to the next), 
+their birthday, and the count of days from the present date to the captain's
+next birthday.

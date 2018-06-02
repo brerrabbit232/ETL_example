@@ -6,15 +6,11 @@
     purpose: Just for fun, the attached code will ask the user to select a 
     National Hockey League (NHL) team from a list. The list of teams is 
     established using an API call to the National Hockey League, itself.
-    The selected team's captain is identified, using a second NHL API call.
+    The selected team's roster is gathered, using a second NHL API call.
     The team captain's birthday is identified, using a third NHL API call.
-    The headlines on the New York Times (NYT) on the day of the team captain's 
-    birthday are then extracted and served back to the user, along with some
-    of the breadcrumb data that helped us arrive at the headline.  
+    The user is then presented with a list of the team's captains and
+    the number of days to each of their respective birthdays.  
 */
-
-
-
 
 include 'config/db.inc.php';
 include 'models/TeamModel.php';

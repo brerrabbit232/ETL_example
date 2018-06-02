@@ -1,5 +1,5 @@
 <?php
-include '../config/db.php';
+include '../config/db.inc.php';
 include '../models/PlayerModel.php';
 include '../views/captainView.php';
 
